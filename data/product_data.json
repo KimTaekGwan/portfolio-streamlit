@@ -1,0 +1,519 @@
+{
+  "options": {
+    "기본 기능": {
+      "order": 1,
+      "options": {
+        "inquiry_form": {
+          "name": "문의폼",
+          "type": "boolean",
+          "order": 1
+        },
+        "sms_service": {
+          "name": "문자발송",
+          "type": "boolean",
+          "order": 2
+        },
+        "popup_banner": {
+          "name": "팝업,배너",
+          "type": "boolean",
+          "order": 3
+        },
+        "additional_board": {
+          "name": "게시판 1p 추가",
+          "type": "integer",
+          "min": 0,
+          "max": 10,
+          "order": 4
+        }
+      }
+    },
+    "결제 및 인증": {
+      "order": 2,
+      "options": {
+        "electronic_payment": {
+          "name": "전자결제",
+          "type": "boolean",
+          "order": 1
+        },
+        "naver_pay": {
+          "name": "네이버페이",
+          "type": "boolean",
+          "order": 2
+        },
+        "payment": {
+          "name": "결제",
+          "type": "boolean",
+          "order": 3
+        },
+        "identity_verification": {
+          "name": "본인인증",
+          "type": "boolean",
+          "order": 4
+        }
+      }
+    },
+    "고급 기능": {
+      "order": 3,
+      "options": {
+        "map_integration": {
+          "name": "지도 연동 (지역검색)",
+          "type": "boolean",
+          "order": 1
+        },
+        "api_integration": {
+          "name": "API 연동",
+          "type": "boolean",
+          "order": 2
+        },
+        "multi_language": {
+          "name": "다국어",
+          "type": "boolean",
+          "order": 3
+        },
+        "channel_talk": {
+          "name": "채널톡",
+          "type": "boolean",
+          "order": 4
+        },
+        "google_analytics": {
+          "name": "GA",
+          "type": "boolean",
+          "order": 5
+        },
+        "reservation": {
+          "name": "예약",
+          "type": "boolean",
+          "order": 6
+        }
+      }
+    },
+    "쇼핑몰 관련": {
+      "order": 4,
+      "options": {
+        "shopping_mall": {
+          "name": "쇼핑몰",
+          "type": "boolean",
+          "order": 1
+        },
+        "shopping_mall_transfer": {
+          "name": "쇼핑몰 이전",
+          "type": "boolean",
+          "order": 2
+        },
+        "coupon": {
+          "name": "쿠폰",
+          "type": "boolean",
+          "order": 3
+        }
+      }
+    },
+    "기타": {
+      "order": 5,
+      "options": {
+        "domain": {
+          "name": "도메인",
+          "type": "boolean",
+          "order": 1
+        }
+      }
+    }
+  },
+  "products": {
+    "basic_package": {
+      "name": "기본 패키지",
+      "theme_cost": 100000,
+      "planning_cost": 200000,
+      "hosting_cost": 252000,
+      "discount": 50000,
+      "options": {
+        "inquiry_form": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "sms_service": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "electronic_payment": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "naver_pay": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "popup_banner": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "map_integration": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "payment": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "api_integration": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "multi_language": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "channel_talk": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "domain": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "additional_board": {
+          "enabled": true,
+          "default": 3,
+          "price_per_unit": 50000
+        },
+        "coupon": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "identity_verification": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "shopping_mall": {
+          "enabled": true,
+          "default": false,
+          "price": 200000
+        },
+        "shopping_mall_transfer": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "google_analytics": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "reservation": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        }
+      }
+    },
+    "premium_package": {
+      "name": "프리미엄 패키지",
+      "theme_cost": 100000,
+      "planning_cost": 200000,
+      "hosting_cost": 252000,
+      "discount": 50000,
+      "options": {
+        "inquiry_form": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "sms_service": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "electronic_payment": {
+          "enabled": true,
+          "default": true,
+          "price": 50000
+        },
+        "naver_pay": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "popup_banner": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "map_integration": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "payment": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "api_integration": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "multi_language": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "channel_talk": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "domain": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "additional_board": {
+          "enabled": true,
+          "default": 0,
+          "price_per_unit": 50000
+        },
+        "coupon": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "identity_verification": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "shopping_mall": {
+          "enabled": true,
+          "default": false,
+          "price": 200000
+        },
+        "shopping_mall_transfer": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "google_analytics": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "reservation": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        }
+      }
+    },
+    "enterprise_package": {
+      "name": "기업용 패키지",
+      "theme_cost": 100000,
+      "planning_cost": 200000,
+      "hosting_cost": 252000,
+      "discount": 50000,
+      "options": {
+        "inquiry_form": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "sms_service": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "electronic_payment": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "naver_pay": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "popup_banner": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "map_integration": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "payment": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "api_integration": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "multi_language": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "channel_talk": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "domain": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "additional_board": {
+          "enabled": true,
+          "default": 0,
+          "price_per_unit": 50000
+        },
+        "coupon": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "identity_verification": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "shopping_mall": {
+          "enabled": true,
+          "default": false,
+          "price": 200000
+        },
+        "shopping_mall_transfer": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "google_analytics": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        },
+        "reservation": {
+          "enabled": true,
+          "default": false,
+          "price": 50000
+        }
+      }
+    },
+    "추가 상품": {
+      "name": "추가 상품",
+      "theme_cost": 100000,
+      "planning_cost": 100000,
+      "hosting_cost": 250000,
+      "discount": 100000,
+      "options": {
+        "inquiry_form": {
+          "enabled": false,
+          "default": false,
+          "price": 0
+        },
+        "sms_service": {
+          "enabled": false,
+          "default": false,
+          "price": 0
+        },
+        "popup_banner": {
+          "enabled": false,
+          "default": false,
+          "price": 0
+        },
+        "additional_board": {
+          "enabled": true,
+          "default": 0,
+          "price_per_unit": 0
+        },
+        "electronic_payment": {
+          "enabled": false,
+          "default": false,
+          "price": 0
+        },
+        "naver_pay": {
+          "enabled": false,
+          "default": false,
+          "price": 0
+        },
+        "payment": {
+          "enabled": false,
+          "default": false,
+          "price": 0
+        },
+        "identity_verification": {
+          "enabled": false,
+          "default": false,
+          "price": 0
+        },
+        "map_integration": {
+          "enabled": false,
+          "default": false,
+          "price": 0
+        },
+        "api_integration": {
+          "enabled": false,
+          "default": false,
+          "price": 0
+        },
+        "multi_language": {
+          "enabled": false,
+          "default": false,
+          "price": 0
+        },
+        "channel_talk": {
+          "enabled": false,
+          "default": false,
+          "price": 0
+        },
+        "google_analytics": {
+          "enabled": false,
+          "default": false,
+          "price": 0
+        },
+        "reservation": {
+          "enabled": false,
+          "default": false,
+          "price": 0
+        },
+        "shopping_mall": {
+          "enabled": false,
+          "default": false,
+          "price": 0
+        },
+        "shopping_mall_transfer": {
+          "enabled": false,
+          "default": false,
+          "price": 0
+        },
+        "coupon": {
+          "enabled": false,
+          "default": false,
+          "price": 0
+        },
+        "domain": {
+          "enabled": false,
+          "default": false,
+          "price": 0
+        }
+      }
+    }
+  }
+}
