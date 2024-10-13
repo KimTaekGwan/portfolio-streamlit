@@ -22,7 +22,10 @@ Try more LangChain 🤝 Streamlit Agent examples at [github.com/langchain-ai/str
 
 if "messages" not in st.session_state:
     st.session_state["messages"] = [
-        {"role": "assistant", "content": "Hi, I'm a chatbot who can search the web. How can I help you?"}
+        {
+            "role": "assistant",
+            "content": "Hi, I'm a chatbot who can search the web. How can I help you?",
+        }
     ]
 
 for msg in st.session_state.messages:
@@ -36,10 +39,15 @@ if prompt := st.chat_input(placeholder="Who won the Women's U.S. Open in 2018?")
         st.info("Please add your OpenAI API key to continue.")
         st.stop()
 
-    llm = ChatOpenAI(model_name="gpt-3.5-turbo", openai_api_key=openai_api_key, streaming=True)
+    llm = ChatOpenAI(
+        model_name="gpt-3.5-turbo", openai_api_key=openai_api_key, streaming=True
+    )
     search = DuckDuckGoSearchRun(name="Search")
     search_agent = initialize_agent(
-        [search], llm, agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, handle_parsing_errors=True
+        [search],
+        llm,
+        agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
+        handle_parsing_errors=True,
     )
     with st.chat_message("assistant"):
         st_cb = StreamlitCallbackHandler(st.container(), expand_new_thoughts=False)

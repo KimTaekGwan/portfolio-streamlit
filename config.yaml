@@ -22,6 +22,11 @@ credentials:
       logged_in: false
       name: qweqwe
       password: $2b$12$5VnFS8drLvaMHF5Ky1SM9.dEkSyO.FOt5BxOnRjk07NIn9oyp/8kO
+    qwer1234:
+      email: qwer@qwer.com
+      logged_in: false
+      name: qwer
+      password: $2b$12$yfGmf7ck5c7d9WBEK9wzS.zokScZAXFTkgs1IwWQVWdOcHzB9EWeG
     rbriggs:
       email: rbriggs@gmail.com
       failed_login_attempts: 0
